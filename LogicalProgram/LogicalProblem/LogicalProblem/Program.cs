@@ -10,7 +10,7 @@ namespace LogicalProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1 Fibonacci, \n2 PerfactNumber, \n3 PrimeNumber, \n4 ReverseNumber");
+            Console.WriteLine("1 Fibonacci, \n2 PerfactNumber, \n3 PrimeNumber, \n4 ReverseNumber. \n5CouponNumber");
             Console.WriteLine("choose the option");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +31,10 @@ namespace LogicalProblem
                 case 4:
                     ReverseNumber reverse = new ReverseNumber();
                     reverse.Reverse();
+                    break;
+                case 5:
+                    CouponNumber couponNumber = new CouponNumber();
+                    couponNumber.Coupon();
                     break;
                 default:
                     Console.WriteLine("choose the option");
